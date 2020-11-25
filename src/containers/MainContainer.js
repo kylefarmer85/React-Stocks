@@ -27,14 +27,9 @@ class MainContainer extends Component {
   }
 
   sortBy = (e) => {
-    e.target.value === this.state.sortBy ? 
-      this.setState({
-        sortBy: ''
-      })
-     : 
-      this.setState({
-        sortBy: e.target.value
-      })
+    this.setState({
+      sortBy: e.target.value
+    })
   }
 
 
